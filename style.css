@@ -1,0 +1,115 @@
+*{box-sizing:border-box}
+:root{
+  --wine:#212842;
+  --wine-dark:#151b30;
+  --cream:#f4f0e8;
+  --soft:#a9c9df;
+  --ink:#111111;
+}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Cormorant Garamond',serif}
+.site{width:100%;max-width:430px;margin:0 auto;overflow:hidden;background:var(--cream)}
+.cream{background:var(--cream);color:var(--ink)}.wine{background:var(--wine);color:var(--cream)}
+.hero{min-height:100vh;padding:46px 22px 18px;text-align:center}.title-main{font-size:34px;line-height:.9;font-weight:500;white-space:nowrap}.title-script{font-family:'Great Vibes',cursive;font-size:33px;line-height:.9;margin-top:-4px}.date-main{font-size:40px;margin:34px 0 28px;letter-spacing:.06em}.hero-photo{width:100%;height:515px;object-fit:cover;object-position:center top;display:block}.names{height:150px;position:relative;margin-top:28px;font-family:'Great Vibes',cursive;font-size:58px;line-height:.72}.names b{font-family:'Cormorant Garamond',serif;font-size:78px;font-weight:400;color:rgba(0,0,0,.13);position:absolute;left:45%;top:15px}.name-left{position:absolute;left:2px;top:0}.name-right{position:absolute;right:2px;top:62px}
+.date-strip{background:var(--wine);color:var(--cream);overflow:hidden;white-space:nowrap;padding:10px 0}.date-track{display:inline-block;animation:marquee 18s linear infinite}.date-track span{font-size:28px;margin-right:26px}@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.intro{padding:62px 26px 70px;text-align:center}.intro p{font-size:24px;line-height:1.35;margin:0 auto 24px}.intro h1{margin:0 0 24px;font-size:40px;line-height:1.05;font-weight:400}
+.place{background:var(--cream);padding:34px 14px 44px}.place-oval{background:var(--wine);color:var(--cream);border-radius:220px;min-height:690px;padding:58px 24px 66px;text-align:center}.place h2,.schedule h2,.details h2{margin:0 0 34px;font-size:44px;line-height:.82;font-weight:400;text-align:center}.place h2 span,.schedule h2 span,.details h2 span{font-family:'Great Vibes',cursive;font-size:38px}.place-part{margin:32px auto 42px}.place-name{font-weight:600}.place-part p{margin:10px 0;font-size:21px;line-height:1.35}.place-part a{display:inline-block;background:var(--cream);color:var(--wine);text-decoration:none;padding:13px 36px;border-radius:999px;font-size:20px;font-weight:700;letter-spacing:.03em}
+.schedule{padding:70px 24px 76px;overflow:hidden}.schedule h2{font-size:40px;margin-bottom:42px}.schedule h2 span{font-size:38px}.row{display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:start;padding:20px 0;border-bottom:1.5px solid rgba(80,40,40,.35)}.row:last-child{border-bottom:0}.row time{font-size:36px;line-height:1}.row p{margin:0;font-size:22px;line-height:1.25}
+.dress{padding:60px 24px 72px;text-align:center}.dress p{margin:0 auto 42px;max-width:360px;font-size:24px;line-height:1.36}.palette{display:flex;justify-content:center;align-items:center;gap:9px;flex-wrap:nowrap}.palette i{width:56px;height:56px;display:block;background:var(--c);border:2px solid rgba(255,255,255,.75);flex:0 0 auto}
+.details{padding:72px 24px}.details h2{font-size:42px}.details h2 span{font-size:38px}.details p{font-size:23px;line-height:1.35;margin:32px 0}.details p:nth-child(3){text-align:right}
+
+/* Анкета как в первом варианте: настоящий большой овал */
+.rsvp-section{padding:46px 8px 0;background:var(--wine)}
+.rsvp-oval{
+  background:radial-gradient(circle at 50% 45%, #fff8ec 0%, #f4ecdf 58%, #eee3d5 100%);
+  color:var(--ink);
+  border-radius:50% / 8%;
+  padding:62px 36px 54px;
+  min-height:840px;
+  box-shadow:inset 0 0 34px rgba(255,255,255,.28);
+}
+.rsvp-oval h2{margin:0 0 24px;font-size:38px;line-height:.85;font-weight:400;text-align:center}
+.rsvp-oval h2 span{font-family:'Great Vibes',cursive;font-size:34px;color:#4a0615}
+.rsvp-intro{font-size:19px;line-height:1.36;text-align:center;margin:0 auto 42px}
+form label,form h3{display:block;font-size:20px;margin:24px 0 10px}
+input[type=text]{width:100%;background:transparent;border:0;border-bottom:2px solid #212842;padding:10px 0;font-size:18px;font-family:'Cormorant Garamond',serif;outline:none;color:var(--ink)}input::placeholder{color:rgba(0,0,0,.25)}
+.radio,.check{display:flex!important;align-items:center;gap:15px;font-size:20px!important;margin:13px 0!important;cursor:pointer;color:var(--ink)!important}.radio input,.check input{display:none}.radio span{width:31px;height:31px;border:3px solid #212842;border-radius:50%;display:inline-block;flex:0 0 auto}.radio input:checked+span{background:#212842;box-shadow:inset 0 0 0 7px #f4ecdf}.check span{width:31px;height:31px;border:3px solid var(--muted);display:inline-block;flex:0 0 auto}.check input:checked+span{background:#212842}
+button{width:78%;display:block;margin:34px auto 0;padding:13px 20px;border-radius:999px;border:2px solid #212842;background:transparent;color:#212842;font:700 20px 'Cormorant Garamond',serif;cursor:pointer}#formResult{text-align:center;font-size:18px;min-height:28px}
+.final{text-align:center;padding:76px 22px 88px}.final h2{margin:0 0 40px;font-size:40px;line-height:1.15;font-weight:400}.final p{font-family:'Great Vibes',cursive;font-size:36px;margin:0 0 24px}.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.timer b{display:block;font-size:36px;font-weight:400}.timer span{color:var(--muted);font-family:'Montserrat',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:9px}
+@media (min-width:769px){.site{display:none}body{min-height:100vh;display:flex;align-items:center;justify-content:center}body::before{content:"Откройте приглашение с телефона 📱";font-family:Arial,sans-serif;font-size:28px;text-align:center;padding:30px}}
+
+
+/* Фикс цветов анкеты */
+.rsvp-oval,
+.rsvp-oval h2,
+.rsvp-oval h3,
+.rsvp-oval p,
+.rsvp-oval label,
+.rsvp-oval .radio,
+.rsvp-oval .check{
+  color:#212842 !important;
+}
+
+.rsvp-oval h2 span{
+  color:#212842 !important;
+}
+
+.rsvp-oval input{
+  color:#212842 !important;
+}
+
+.rsvp-oval input::placeholder{
+  color:rgba(33,40,66,.35) !important;
+}
+
+.rsvp-oval input[type=text]{
+  border-bottom-color:#212842 !important;
+}
+
+.rsvp-oval .radio span{
+  border-color:#212842 !important;
+}
+
+.rsvp-oval .check span{
+  border-color:#8ea3c9 !important;
+}
+
+.rsvp-oval button{
+  border-color:#212842 !important;
+  color:#212842 !important;
+}
+
+/* Сайт должен быть видимым даже если классы reveal остались в HTML */
+.reveal,
+.reveal-section h1,
+.reveal-section h2,
+.reveal-section p,
+.reveal-section .place-part,
+.reveal-section .row,
+.reveal-section .palette,
+.reveal-section form,
+.reveal-section .timer{
+  opacity:0;
+  transform:translateY(24px);
+  filter:blur(6px);
+  transition:opacity 1s ease, transform 1s ease, filter 1s ease;
+}
+
+.reveal.visible,
+.reveal-section.visible h1,
+.reveal-section.visible h2,
+.reveal-section.visible p,
+.reveal-section.visible .place-part,
+.reveal-section.visible .row,
+.reveal-section.visible .palette,
+.reveal-section.visible form,
+.reveal-section.visible .timer{
+  opacity:1;
+  transform:translateY(0);
+  filter:blur(0);
+}
+
+
+/* Обновлённая палитра дресс-кода: голубой, пудровый, шампань */
+.palette i{border-radius:0;border-color:rgba(244,240,232,.9)!important;box-shadow:0 10px 22px rgba(0,0,0,.10)}
+.hero-photo{object-position:center center}
